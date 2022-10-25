@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    body{
+        background-color: #fff;
+        margin: 0;
+    }
+    header{
+        width: 100%;
+        height: 80px;
+        /* border: 1px solid rebeccapurple; */
+        box-shadow: 5px 5px 5px black;
+    }
+    header>.logo{
+        background-color: #fff;
+        text-align: center;
+    }
+    header>.logo img{
+           position: relative; 
+           top:20px
+           
+    }
+    .ic{
+        position: absolute;
+        padding: 20px;
+
+    }
+    .burger{
+       font-size: 30px;
+        left: 0;
+    }
+    .call{
+        font-size: 28px;
+     
+        right: 0;
+    }
+    .slideshow{
+        width: 100%;
+        position: relative;
+    }
+    .myslide img{
+        width: 100%;
+        height: 180px;
+    }
+    .dots{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+    background-color: black;
+    opacity: 20%;
+    border-radius: 15px;
+}
+.dot.active{
+    opacity: 100%;
+    background-color: #66adfb;
+}
+.control{
+    position: absolute;
+    top: 50%;
+    margin-top: -20px; /*50% 주면 꼭짓점 기준이기 때문에 내려와보여서 줌*/
+    padding: 10px;
+    
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(100, 100, 100, 0.3);
+}
+.prev{
+    border-radius: 0px 5px 5px 0px;
+}
+.next{
+    right: 0;
+    border-radius: 5px 0px 0px 5px;
+}
+h2{
+    text-align: center;
+    margin: 15px;
+}
+
+
+</style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <a href=""><img src="images/학원로고.png" alt=""></a>
+                <label for="" class="ic burger"><i class="fa-solid fa-bars"></i></label>
+                <label for="" class="ic call"><i class="fa-solid fa-phone"></i></label>
+            </div>
+        </header>
+        <div class="slideshow">
+            <div class="myslide">
+                <a href=""><img src="images/배너.jpg"></a>
+            </div>
+            <a href="" class="control prev">&#10094</a>
+            <a href="" class="control next">&#10095</a>
+            <p class="dots">
+                <label for="" class="dot active"></label>
+                <label for="" class="dot"></label>
+                <label for="" class="dot"></label>
+                <label for="" class="dot"></label>
+                <label for="" class="dot"></label>
+                <label for="" class="dot"></label>
+                <label for="" class="dot"></label>
+                <label for="" class="dot"></label>
+            </p>
+        </div>
+        <h2>현재 모집중인 과정</h2>
+    </div>
+
+</body>
+
+</html>

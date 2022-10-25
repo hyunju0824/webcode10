@@ -1,0 +1,138 @@
+*{
+    font-family: Arial, Helvetica, sans-serif; /* 제목 */
+}
+body{
+    background-color: #fff;
+    /* border: 1px solid red; */
+    margin: 0;
+}
+.wrapper{
+    width: 100%;
+    min-width: 372px;   /* 모바일 화면 최소 사이즈 */ 
+    margin: 0 auto;
+    background-color: #fff;
+}
+/* 헤더영역 */
+header{
+    width: 100%;
+    height: 300px;
+    background-color: #6867a8;
+    color: #fff;
+}
+#logo{
+    height: 260px;
+}
+.hgroup{
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+.hgroup>h1{
+    margin: 0;
+}
+.hgroup>h1.first{
+    margin-top: 30px;
+}
+nav{
+    height: 40px;
+    background-color: #ededed;
+    color: #111;
+
+    position: relative;
+}
+/* label */
+.toggle{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.toggle:hover{
+    color: orangered;
+}
+.mylink{
+    background-color: #ededed;
+    display: none; /* block */
+    border-top: 1px solid #111;
+}
+.menu{
+    list-style: none;
+    margin: 0; /* ul태그 기본적으로 마진 o - 제거 */
+    padding-left: 0px;
+}
+.menu>li{
+height: 40px;
+width: 100%;
+}
+.menu>li>a{
+display: block;
+text-decoration: none;
+width: 100%;
+height: 40px;
+line-height: 40px;
+color: #111;
+padding-left: 20px;
+box-sizing: border-box;
+}
+.menu>li>a:hover{
+    background-color: #ffcc00;
+}
+/*푸터*/
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: #ededed;
+}
+address{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+address>span{
+    color: orangered;
+    font-weight: bold;
+}
+/* 슬라이드 영역 */
+.slideshow{
+    width: 100%;
+    position: relative;
+}
+.myslide img{
+    width: 100%;
+}
+.control{
+    position: absolute;
+    top: 50%;
+    margin-top: -20px; /*50% 주면 꼭짓점 기준이기 때문에 내려와보여서 줌*/
+    padding: 10px;
+    
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(100, 100, 100, 0.3);
+}
+.prev{
+    border-radius: 0px 5px 5px 0px;
+}
+.next{
+    right: 0;
+    border-radius: 5px 0px 0px 5px;
+}
+.dots{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.dot{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 3px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.dot.active{
+    background-color: #6867a8;
+}
